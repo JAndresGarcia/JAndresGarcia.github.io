@@ -135,7 +135,7 @@ window.addEventListener("load", function () {
     function Desencriptar(textarea) {
         text = textarea.value
 
-        if (encriptados.length === 0) {
+        if (encriptados.length === 0 && text !== '') {
             const desencrypted =
                 text
                     .replace(/enter/g, 'e')
