@@ -168,11 +168,3 @@ window.addEventListener("load", function () {
         Desencriptar(textarea);
     });
 });
-
-
-
-
-
-
-
-
