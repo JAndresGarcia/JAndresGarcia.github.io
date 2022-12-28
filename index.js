@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
     const warning = document.getElementById("warning");
     let encriptados = [];
     let desencriptados = [];
-    let textos = [];
+
 
 
     if (encriptados.length === 0 && desencriptados.length === 0) {
@@ -144,10 +144,7 @@ window.addEventListener("load", function () {
                     .replace(/ober/g, 'o')
                     .replace(/ufat/g, 'u');
             desencriptados.push(desencrypted);
-            document.getElementById("header").innerHTML = "Tus mensajes desencriptados:";
-            let listaDesencriptados = desencriptados.map(texto => `<li>${texto}</li>`).join('');
-            document.getElementById("textos-encriptados").innerHTML = `<ol>${listaDesencriptados}</ol>`;
-        } else if (encriptados.length > 0 && text !== '') {
+        } else if (encriptados.length > 0){
             let desencriptar = encriptados.shift();
             const desencriptado =
                 desencriptar
